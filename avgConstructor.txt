@@ -1,0 +1,35 @@
+ class Students
+  2 {
+  3     int roll,mark1,mark2;
+  4     String name;
+  5     Students()
+  6     {
+  7     roll=0;
+  8     name="unknown";
+  9     mark1=0;
+ 10     mark2=0;
+ 11     }
+ 12 Students(int r,String n,int m1,int m2){
+ 13 roll=r;
+ 14 name=n;
+ 15 mark1=m1;
+ 16 mark2=m2;
+ 17 }
+ 18 void display(){
+ 19 System.out.println(roll+" "+name+ ""+mark1+""+mark2);
+ 20 }}
+ 21 class Stud{
+ 22     public static void main(String[]args){
+ 23         Students s1=new Students(1,"Anu",50,70);
+ 24         Students s2=new Students(2,"Banu",80,90);
+ 25         Students s3=new Students(3,"binu",40,80);
+ 26         s1.display();
+ 27         s2.display();
+ 28         s3.display();
+ 29         double avg1=(s1.mark1+s2.mark1+s3.mark1)/3;
+ 30         double avg2=(s2.mark2+s1.mark2+s3.mark2)/3;
+ 31
+ 32                 System.out.println("avg sub1="+avg1);
+ 33                 System.out.println("avg sub2="+avg2);
+ 34     }
+ 35 }
